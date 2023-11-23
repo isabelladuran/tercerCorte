@@ -19,9 +19,9 @@ const PrivateRoute = ({ children }) => {
 	) : (
 		<>
 			<NavComponent />
-			<h1>HOLI</h1>
-			<h2>DESLOGUEATE</h2>
-			<button onClick={() => goToLogIn()}> metele</button>
+			<h1>Bienvenido</h1>
+			<h2>Login</h2>
+			<button onClick={() => goToLogIn()}> Click Aquí </button>
 		</>
 	);
 };

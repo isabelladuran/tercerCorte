@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { NavComponent } from "./components/NavComponent";
 import { AuthContext } from "./context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import './Login.css';
 
 const Login = () => {
 	const {

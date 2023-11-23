@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(123, 10, 108);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgba(123, 10, 108, 0.502);
+  }
