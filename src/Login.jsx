@@ -31,13 +31,13 @@ const Login = () => {
 	return (
 		<div>
 			<NavComponent />
-			<h1> Este es un fake fake login </h1>
+			<h1> Este es un fake login </h1>
 			
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<input {...register("USUARIO")} />
 
-				<input {...register("CONTRA", { required: true })} />
-				{errors.exampleRequired && <span>PONELE</span>}
+				<input {...register("CONTRASEÑA", { required: true })} />
+				{errors.exampleRequired && <span>+</span>}
 
 				<input type="submit" />
 			</form>
