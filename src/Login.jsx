@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { NavComponent } from "./components/NavComponent";
 import { AuthContext } from "./context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import './Login.css';
 
 const Login = () => {
 	const {
@@ -36,7 +37,7 @@ const Login = () => {
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<input {...register("USUARIO")} />
 
-				<input {...register("CONTRASEÑA", { required: true })} />
+				<input {...register("CONTRA", { required: true })} />
 				{errors.exampleRequired && <span>+</span>}
 
 				<input type="submit" />

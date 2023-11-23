@@ -20,10 +20,10 @@ export const GiftExpertApp = () =>{
     return(
         <>
         <h1>Contador</h1>
-        <span>Llevo: {counter}</span><br></br>
+        <span>Hasta el momento se tiene: {counter}</span><br></br>
         <button onClick={() => increment() }> +1 </button>
         <button onClick = {()=> decrement()}>-1</button>
-        <button onClick = {()=> reset()}>Reiniciar</button>
+        <button onClick = {()=> reset()}>Limpiar</button>
          <h1>GiftExpert</h1> 
         <AddCategory onAddCategory ={onAddCategory}/>
         {
