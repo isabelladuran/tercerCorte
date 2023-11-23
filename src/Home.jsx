@@ -22,7 +22,7 @@ const Home = () => {
 			<h1>OLA</h1>
 			<h3> {`User: ${user.user}`} </h3>
 			<h3> {`Password: ${user.password}`} </h3>
-			<button onClick={() => logOut()}> SALI </button>
+			<button onClick={() => logOut()}> Out </button>
 		</div>
 	);
 };

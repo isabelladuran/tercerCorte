@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { NavComponent } from "./components/NavComponent";
 import { AuthContext } from "./context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import './Login.css';
 
 const Login = () => {
 	const {
@@ -31,13 +32,13 @@ const Login = () => {
 	return (
 		<div>
 			<NavComponent />
-			<h1> Este es un fake fake login </h1>
+			<h1> Este es un fake login </h1>
 			
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<input {...register("USUARIO")} />
 
 				<input {...register("CONTRA", { required: true })} />
-				{errors.exampleRequired && <span>PONELE</span>}
+				{errors.exampleRequired && <span>+</span>}
 
 				<input type="submit" />
 			</form>
