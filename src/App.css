@@ -1,30 +1,70 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  to {
+    transform: rotate(360deg);
   }
-  
-  .btn {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    margin-bottom: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
-  
-  .btn:hover {
-    background-color: #2980b9;
-  }
-  
-  
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.nav-menu {
+  background-color: #333;
+}
+
+.Nav{
+  background-color: #66baff;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 15%;
+}.Links{
+  color: #D90368;
+  text-decoration: underline;
+  font-size: 2vw;
+  transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}.Links:hover{
+  font-size: 2.2vw;
+  color: #8f0646;
+}.Links:focus{
+  font-size: 1.8vw;
+  color: aqua;
+}
+.Nav img {
+  width: 80%;
+  padding: 10%;
+}
